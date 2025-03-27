@@ -1,6 +1,6 @@
-### CAPSTONE_BICING_2025
+# CAPSTONE_BICING_2025
 
-# Explicación del Código
+### Explicación del Código
 
 Este código importa las librerías necesarias para trabajar con datos y entrenar un modelo de Machine Learning.
 
