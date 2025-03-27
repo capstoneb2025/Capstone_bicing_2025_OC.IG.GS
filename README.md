@@ -62,15 +62,10 @@ merge_station_info(df)
 
 check_nan_values(df)
 
-#### Calculamos el porcentaje de docks disponibles dividiendo 'num_docks_available' por 'capacity' y redondeamos a 2 decimales.  
-#### Creamos una copia del DataFrame original para futuras modificaciones.  
+#### Calculamos el porcentaje de docks disponibles dividiendo 'num_docks_available' por 'capacity' y redondeamos a 2 decimales. Creamos una copia del DataFrame original para futuras modificaciones.  
 
 #### Feature engineering  
-#### Definimos las columnas a las que aplicaremos retardos lineales ('percentage_docks_available').  
-#### Definimos las columnas a las que aplicaremos retardos con rellenado hacia adelante ('status').  
-#### Aplicamos la función `create_lags` para generar estas nuevas características en el DataFrame.  
-#### Adaptamos los metadatos para mantener un formato uniforme.  
-#### Importamos `print_unique_values` desde `my_functions` para mostrar valores únicos en el DataFrame.  
+#### Definimos las columnas a las que aplicaremos retardos lineales ('percentage_docks_available').  Definimos las columnas a las que aplicaremos retardos con rellenado hacia adelante ('status'). Aplicamos la función `create_lags` para generar estas nuevas características en el DataFrame. Adaptamos los metadatos para mantener un formato uniforme.  Y importamos `print_unique_values` desde `my_functions` para mostrar valores únicos en el DataFrame.  
 
 df['percentage_docks_available'] = (df['num_docks_available'] / df['capacity'] ).round(2)
 
@@ -88,9 +83,7 @@ Adapt Metadata for equal format
 rom my_functions import print_unique_values
 
 
-#### Mostramos los valores únicos en las columnas de `df` con `print_unique_values(df)`. Comparamos las columnas de `df` y `sample` usando `compare_df_cols(df, sample)`.  
-
-#### Creamos la función `day_of_week` para agregar la columna 'day_of_week' si no existe, calculándola a partir de las columnas de fecha y hora.  
+#### Mostramos los valores únicos en las columnas de `df` con `print_unique_values(df)`. Comparamos las columnas de `df` y `sample` usando `compare_df_cols(df, sample)`. Creamos la función `day_of_week` para agregar la columna 'day_of_week' si no existe, calculándola a partir de las columnas de fecha y hora.  
 
 print_unique_values(df)
 
@@ -129,11 +122,7 @@ last_reported(sample)
 sample[['status','lag_1h_status', 'lag_2h_status', 'lag_3h_status', 'lag_4h_status' ]]='IN_SERVICE'
 sample[['lag_1h_is_interpolated','lag_2h_is_interpolated','lag_3h_is_interpolated','lag_4h_is_interpolated']]= False
 
-#### Asignamos True a las columnas de estado en `sample`. Mostramos los valores únicos de la columna 'status' en `df`. Comparamos las columnas de `df` y `sample`.  
-
-#### Definimos las columnas de características y la columna objetivo.  
-
-#### Convertimos columnas de objeto a booleano y a categoría en `df` y `sample`.
+#### Asignamos True a las columnas de estado en `sample`. Mostramos los valores únicos de la columna 'status' en `df`. Comparamos las columnas de `df` y `sample`. Definimos las columnas de características y la columna objetivo . Y Convertimos columnas de objeto a booleano y a categoría en `df` y `sample`.
 
 sample[['is_charging_station', 'is_installed', 'is_renting', 'is_returning']] = True
 
@@ -160,9 +149,7 @@ convert_object_columns_to_category(sample)
 
 #### df = df[df['year']>2022]
 
-#### Definimos el punto final para el conjunto de entrenamiento (70% de los datos).  
-#### Definimos el punto final para el conjunto de validación (85% de los datos).  
-#### Dividimos el DataFrame en tres conjuntos: entrenamiento, validación y prueba.  
+#### Definimos el punto final para el conjunto de entrenamiento (70% de los datos).  Definimos el punto final para el conjunto de validación (85% de los datos). Y dividimos el DataFrame en tres conjuntos: entrenamiento, validación y prueba.
 
 train_end = df[time_column].quantile(0.7)
 val_end = df[time_column].quantile(0.85)
@@ -185,8 +172,7 @@ y_val = val_data[target_column]
 X_test = test_data[feature_columns]
 y_test = test_data[target_column]
 
-#### Creamos un modelo `LGBMRegressor` con 1000 estimadores, una tasa de aprendizaje de 0.03 y una semilla aleatoria de 42.  
-#### Entrenamos el modelo con los datos de entrenamiento y validación, utilizando 'rmse' como métrica y early stopping para evitar el sobreajuste.  
+#### Creamos un modelo `LGBMRegressor` con 1000 estimadores, una tasa de aprendizaje de 0.03 y una semilla aleatoria de 42. Y  entrenamos el modelo con los datos de entrenamiento y validación, utilizando 'rmse' como métrica y early stopping para evitar el sobreajuste.  
 
 model = LGBMRegressor(
     n_estimators=1000,
@@ -292,15 +278,12 @@ final_submission['index'] = range(len(final_submission))
 
 final_submission = final_submission[['index', 'percentage_docks_available']]
 
-#### Guardamos el archivo final con un sufijo incrementado.  
-#### Buscamos archivos existentes con el patrón 'model_2/Sub_model_2_plain_*.csv'.  
+#### Guardamos el archivo final con un sufijo incrementado. Y buscamos archivos existentes con el patrón 'model_2/Sub_model_2_plain_*.csv'.  
 
 import glob
 existing_files = glob.glob('model_2/Sub_model_2_plain_*.csv')
 
-#### Extraemos el número máximo de los archivos existentes y le sumamos 1.  
-#### Si no hay archivos previos, iniciamos con el número 1.  
-#### Guardamos el archivo final con el nombre incrementado.  
+#### Extraemos el número máximo de los archivos existentes y le sumamos 1. Si no hay archivos previos, iniciamos con el número 1.  Y finalmente guardamos el archivo final
 
 import re
 numbers = [int(re.search(r'plain_(\d+)', f).group(1)) for f in existing_files if re.search(r'plain_(\d+)', f)]
