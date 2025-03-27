@@ -29,11 +29,11 @@ sample = pd.read_csv('sample/metadata_sample_submission_2025.csv')
 
 stations_info = pd.read_csv('data\Informacio_estacions_bicing_2025.csv')
 
-#### Guardamos el número de filas originales del DataFrame.  
-#### Filtramos `df` para mantener solo las filas donde 'station_id' está en `sample`.  
-#### Contamos las filas restantes después del filtrado.  
-#### Calculamos el porcentaje de filas eliminadas y lo mostramos en pantalla.  
-#### Definimos la variable `time_column` con el nombre de la columna de tiempo.  
+#### Guardamos el número de filas originales del DataFrame. 
+Filtramos `df` para mantener solo las filas donde 'station_id' está en `sample`.  
+Contamos las filas restantes después del filtrado.  
+Calculamos el porcentaje de filas eliminadas y lo mostramos en pantalla.  
+Definimos la variable `time_column` con el nombre de la columna de tiempo.  
 
 original_rows = len(df)
 df = df[df['station_id'].isin(sample['station_id'].unique())]
