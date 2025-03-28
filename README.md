@@ -1,5 +1,45 @@
 # CAPSTONE_BICING_2025
 
+Introduccció:
+
+Explicacion de historia.
+
+Usuaris de bicing
+problemes de les hores haviem posat +2
+
+Introducció de les dades (per que hem afegit que)
+
+poner graficos barcelona estan incluidos los partidos locales i fuera de casa  se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
+Sol/lluvia 
+vacaciones
+
+
+
+
+
+Aplicacion app ponder capturas de como funciona. predicciones con pardido del barça o sin partido 
+
+Explicacion de coodigo:
+
+
+
+
+
+
+
+
+
+
+Tenemos version local y version en colab con ftflow explicar las diferencias.
+
+
+
+
+
+
+
+
+
 ### Este código importa las librerías necesarias para trabajar con datos y entrenar un modelo de Machine Learning.
 ### Importamos numpy para cálculos numéricos y manejo de arrays. LightGBM, una librería eficiente para modelos de Gradient Boosting. Métricas para evaluar el rendimiento del modelo y LabelEncoder para convertir datos categóricos en números.
  
@@ -286,10 +326,3 @@ print(f"\nSaving final submission to: {output_file}")
 final_submission.to_csv(output_file, index=False)
 
 
-
-
-Explicacion de coodigo:
-
-Explicacion de historia.
-
-Tenemos version local y version en colab con ftflow explicar las diferencias.
