@@ -4,24 +4,22 @@ Introduccció:
 
 Explicacion de historia.
 
+Por que hemo puesto las x variables
 Usuaris de bicing
 problemes de les hores haviem posat +2
 
 Introducció de les dades (per que hem afegit que)
 
-poner graficos barcelona estan incluidos los partidos locales i fuera de casa  se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
+Poner graficos barcelona estan incluidos los partidos locales i fuera de casa se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
 Sol/lluvia 
-vacaciones
-
-
-
+Dias festivos
 
 
 Aplicacion app ponder capturas de como funciona. predicciones con pardido del barça o sin partido 
 
 Explicacion de coodigo:
 
-
+Conclusion:
 
 
 
