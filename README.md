@@ -155,12 +155,6 @@ train_data = df[df[time_column] <= train_end]
 val_data = df[(df[time_column] > train_end) & (df[time_column] <= val_end)]
 test_data = df[df[time_column] > val_end]
 
-#### Creamos un objeto `LabelEncoder` y transformamos la columna 'station_id' en `df` a valores numéricos.  
-
-#### le = LabelEncoder()
-#### for col in ['station_id']:
-####     df[col] = le.fit_transform(df[col])
-
 ### Asignamos las características y la columna objetivo para los conjuntos de entrenamiento, validación y prueba.  
 X_train = train_data[feature_columns]
 y_train = train_data[target_column]
