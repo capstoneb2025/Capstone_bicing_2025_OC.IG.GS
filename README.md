@@ -1,7 +1,5 @@
 # CAPSTONE_BICING_2025
 
-### Explicación del Código
-
 ### Este código importa las librerías necesarias para trabajar con datos y entrenar un modelo de Machine Learning.
 ### Importamos numpy para cálculos numéricos y manejo de arrays. LightGBM, una librería eficiente para modelos de Gradient Boosting. Métricas para evaluar el rendimiento del modelo y LabelEncoder para convertir datos categóricos en números.
  
