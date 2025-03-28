@@ -22,6 +22,7 @@ df = pd.read_csv('data/Bicing_data_merged_3.csv')
 
 sample = pd.read_csv('sample/metadata_sample_submission_2025.csv')
 
+
 #### Cargamos el archivo CSV con información de las estaciones de Bicing
 
 stations_info = pd.read_csv('data\Informacio_estacions_bicing_2025.csv')
@@ -283,3 +284,12 @@ next_num = max(numbers) + 1 if numbers else 1
 output_file = f'model_2/Sub_model_2_plain_{next_num}.csv'
 print(f"\nSaving final submission to: {output_file}")
 final_submission.to_csv(output_file, index=False)
+
+
+
+
+Explicacion de coodigo:
+
+Explicacion de historia.
+
+Tenemos version local y version en colab con ftflow explicar las diferencias.
