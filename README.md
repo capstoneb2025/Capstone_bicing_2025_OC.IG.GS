@@ -33,7 +33,7 @@ Tamben se puede observar como en el momento en el que se produce la lluvia el mo
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
 
-Por otro lado el
+Por otro lado, tambien en el modelo se predice correctamente que en la zobna de plaça espanya que és la zona donde actuamente se enquentra el estadio del FCB, funciona faborablemente la prediccion en el momento en que se esta transcuriendoe el partido en casa, hay un agumento de la dispnivilidad de bicicletas i dura hasta que el partido termina durante  unas dos horas.
 
 ![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
 
