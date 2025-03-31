@@ -23,7 +23,7 @@ Explicacion de coodigo:
 
 
 
-En los siguentes graficos se puede observar como el uso de la varible lluvia tiene efectos possitivos en la predicción del modelo.
+En los siguentes graficos se puede observar como el uso de la varible lluvia tiene efectos possitivos en la predicción del modelo. En canvió si no hay lluvia la predicion tambien funciona correctamente
 
 
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
