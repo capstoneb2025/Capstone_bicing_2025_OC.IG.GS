@@ -22,7 +22,7 @@ Explicacion de coodigo:
 
 
 
-![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
+
 
 
 
@@ -33,6 +33,9 @@ Explicacion de coodigo:
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
 
+
+
+![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
 
 ![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
 
