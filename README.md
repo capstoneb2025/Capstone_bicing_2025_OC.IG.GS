@@ -37,6 +37,8 @@ Por otro lado, tambien se puede observar como en la zona de plaça espanya que �
 
 ![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
 
+
+La predición en todas las estaciones de barcelona se modifica aumentando la disponibilidad de bicicletas durante el partido y se reduce en las horas antes del partido.
 ![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
 
 
