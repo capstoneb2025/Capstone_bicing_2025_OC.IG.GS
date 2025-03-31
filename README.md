@@ -20,7 +20,12 @@ Aplicacion app ponder capturas de como funciona. predicciones con pardido del ba
 Explicacion de coodigo:
 
 
+Explicación de las varibles extra incluidas en el modelo:
 
+Se han icnluydo en el dataset las siguientes variables:
+
+Variable lluvia, se ha incluido la variable en el dataset, en que se registra precipitaciones en barcelona.
+Variable partidos FCB. se ha incuido la variable, de todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
 En los siguentes graficos se puede observar como el uso de la varible lluvia "si se registra precipitaciones" tiene efectos possitivos en la predicción del modelo. En canvió si no hay lluvia la predicion tambien funciona correctamente.
 
