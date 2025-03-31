@@ -20,7 +20,7 @@ Aplicacion app ponder capturas de como funciona. predicciones con pardido del ba
 Explicacion de coodigo:
 
 
-Explicación de las varibles extra incluidas en el modelo:
+## Explicación de las varibles extra incluidas en el modelo:
 
 Se han icnluydo en el dataset las siguientes variables:
 
