@@ -19,23 +19,34 @@ Aplicacion app ponder capturas de como funciona. predicciones con pardido del ba
 
 Explicacion de coodigo:
 
-Conclusion:
+
 
 
 ![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
+
+
+
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
+
+
+
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
+
+
+
 ![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
+
+
+
 ![Image](https://github.com/user-attachments/assets/e9aed01a-b223-40a5-8a1f-694e03238404)
-
-
 
 
 
 Tenemos version local y version en colab con ftflow explicar las diferencias.
 
+Aplicacion Orlando
 
-
+Conclusion:
 
 
 
