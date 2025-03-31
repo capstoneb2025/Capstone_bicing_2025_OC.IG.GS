@@ -24,26 +24,31 @@ Explicacion de coodigo:
 
 Se han incluido en el dataset las siguientes variables:
 
-Variable lluvia, se ha incluido la variable en el dataset, en que se registra precipitaciones en barcelona.
-Variable partidos FCB. se ha incuido la variable, de todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
+Variable lluvia: se ha incluido en el dataset una variable que registra las precipitaciones en Barcelona.
 
-En los siguentes graficos se puede observar como el uso de la varible lluvia "si se registra precipitaciones" tiene efectos possitivos en la predicción del modelo. En canvió si no hay lluvia la predicion tambien funciona correctamente.
+Variable partidos FCB: se ha incluido una variable que recoge todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
+En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. En cambio, si no hay lluvia, la predicción también funciona correctamente.
 
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
 
 
-Tamben se puede observar como en el momento en el que se produce la lluvia el modelo precide correctamente que hay mas spots de bicing y mas disponivilidad de bicicletas.
+También se puede observar cómo, en el momento en que se produce la lluvia, el modelo predice correctamente que hay más spots de Bicing y mayor disponibilidad de bicicletas.
 
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
 
-Por otro lado, tambien se puede observar como en la zona de plaça espanya que és la zona donde actuamente se enquentra las coneciones con bus, metro, tren con el bicing y el estadio del FCB, funciona faborablemente. En el momento en que se esta transcuriendoe el partido en casa, hay una disminucion de la disponibilidad de bicicletas hantes del partido i durante y depués del partido la disponibilidad augmenta otra vez. Es una dinamica bastante normal, por las diferents dificultades por la gran afluencia de fans que utilizan todos los servicios publicos para llegar al campo.
+Por otro lado, también se puede observar que en la zona de Plaça Espanya, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, así como la proximidad al estadio del FCB, el modelo funciona favorablemente.
+
+En el momento en que se está disputando un partido en casa, se registra una disminución en la disponibilidad de bicicletas antes y durante el partido. Sin embargo, después del encuentro, la disponibilidad vuelve a aumentar.
+
+Esta dinámica es bastante habitual debido a las diversas dificultades ocasionadas por la gran afluencia de aficionados que utilizan los servicios públicos para llegar al estadio.
 
 ![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
 
 
-La predición en todas las estaciones de barcelona se modifica aumentando la disponibilidad de bicicletas durante el partido y se reduce en las horas antes del partido.
+La predicción en todas las estaciones de Barcelona varía, aumentando la disponibilidad de bicicletas durante el partido y reduciéndose en las horas previas al encuentro.
+
 ![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
 
 
