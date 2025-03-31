@@ -33,7 +33,7 @@ Tamben se puede observar como en el momento en el que se produce la lluvia el mo
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
 
-Por otro lado, tambien en el modelo se predice correctamente que en la zona de plaça espanya que és la zona donde actuamente se enquentra el estadio del FCB, funciona faborablemente la prediccion en el momento en que se esta transcuriendoe el partido en casa, hay una deisminucion de la disponibilidad de bicicletas despues del partido.
+Por otro lado, tambien se puede observar como en la zona de plaça espanya que és la zona donde actuamente se enquentra las coneciones con bus, metro, tren con el bicing y el estadio del FCB, funciona faborablemente. En el momento en que se esta transcuriendoe el partido en casa, hay una disminucion de la disponibilidad de bicicletas hantes del partido i durante y depués del partido la disponibilidad augmenta otra vez. Es una dinamica bastante normal, por las diferents dificultades por la gran afluencia de fans que utilizan todos los servicios publicos para llegar al campo.
 
 ![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
 
