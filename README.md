@@ -22,7 +22,7 @@ Explicacion de coodigo:
 
 ## Explicación de las varibles extra incluidas en el modelo:
 
-Se han icnluydo en el dataset las siguientes variables:
+Se han incluido en el dataset las siguientes variables:
 
 Variable lluvia, se ha incluido la variable en el dataset, en que se registra precipitaciones en barcelona.
 Variable partidos FCB. se ha incuido la variable, de todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
