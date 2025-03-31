@@ -23,12 +23,13 @@ Explicacion de coodigo:
 
 
 
-En los siguentes graficos se puede observar como el uso de la varible lluvia tiene efectos possitivos en la predicción del modelo. En canvió si no hay lluvia la predicion tambien funciona correctamente
+En los siguentes graficos se puede observar como el uso de la varible lluvia tiene efectos possitivos en la predicción del modelo. En canvió si no hay lluvia la predicion tambien funciona correctamente.
 
 
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
 
 
+Tambien se puede observar como en el momento en el que se produce la lluvia el modelo precide correctamente que hay mas spots de bicing.
 
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
