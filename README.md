@@ -28,7 +28,7 @@ Variable lluvia: se ha incluido en el dataset una variable que registra las prec
 
 Variable partidos FCB: se ha incluido una variable que recoge todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
-En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. En cambio, si no hay lluvia, la predicción también funciona correctamente.
+En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. En cambio, si no hay la variable lluvia, la predicción también funciona correctamente però no tanto.
 
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
 
