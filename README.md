@@ -24,7 +24,7 @@ Explicacion de coodigo:
 
 Se han incluido en el dataset las siguientes variables:
 
-Variable lluvia: se ha incluido en el dataset una variable que registra las precipitaciones en Barcelona.
+Variable lluvia: se ha incluido en el dataset una variable que registra las precipitaciones en Barcelona. Se analiza la primera hora que llueve. Con precipitaciones de mas de 1ml. I con los dias de no lluvia se identifica los dias en que no hay lluvia.
 
 Variable partidos FCB: se ha incluido una variable que recoge todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
