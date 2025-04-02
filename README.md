@@ -1,11 +1,11 @@
 # CAPSTONE_BICING_2025
 
-## Introduccció:
+## Introducción y desarrollo del proyecto:
 
 Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
 Escojimos 3 variables que respresentavan la mayoria de casuisticas significativas. Son la siguientes:
 
-Variables climáticas:
+-Variables climáticas:
 Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval:
 Temperatura
 Precipitación máxima en 1 minuto
@@ -21,7 +21,7 @@ Partidos del F.C. Barcelona: Utilizamos los datos de la web Livefutbol.com.
 
 Festividades: Recurriendo a la web de Betevé del Ajuntament de Barcelona.
 
-Para verificar la relevancia de estas variables, analizamos su impacto en la predicción mediante la creación de gráficos y mapas, ajustando las fechas y comparando los resultados con los datos reales. También identificamos fechas clave para evaluar si permitían predecir escenarios específicos, lo que ayudó a validar el modelo.
+Para verificar la relevancia de estas variables, analizamos su impacto mediante la creación de gráficos y mapas, ajustando las fechas y comparando los resultados con los datos reales y la predicción. También identificamos fechas clave para evaluar si permitían predecir escenarios específicos, lo que ayudó a validar el modelo.
 Para relizar el trabajo anterior de forma mas fluida usamos mtflow para comparar los efectos de las variaciones incorporadas.
 
 Finalmente, consideramos que sería una buena idea aplicar el modelo en una aplicación, permitiendo sintetizar el trabajo en un sistema tangible.
