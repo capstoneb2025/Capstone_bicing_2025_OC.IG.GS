@@ -381,7 +381,303 @@ print(f"\nSaving final submission to: {output_file}")
 final_submission.to_csv(output_file, index=False)
 
 
-# Modelo 3:
+# Modelo 3 (definitivo):
+
+!pip install mlflow streamlit pandas matplotlib scikit-learn joblib lightgbm
+
+import pandas as pd
+import numpy as np
+from lightgbm import LGBMRegressor
+from lightgbm import early_stopping
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.preprocessing import LabelEncoder
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+import sys
+import os
+#### Specify the root folder
+root_folder = r'/content/drive/MyDrive/'
+
+#### Walk through all subfolders and add them to sys.path
+for root, dirs, files in os.walk(root_folder):
+    sys.path.append(root)
+import my_functions
 
 
+from my_functions import check_nan_values, extract_time_components, show_nan_rows, get_unique_values_with_nan, merge_station_info, compare_df_cols, day_of_week, last_reported, convert_object_columns_to_boolean, convert_object_columns_to_category, create_lags, create_lag_lead, create_lag_lead_days, merge_barsa_data, merge_weather_data, merge_holiday_data, drop_non_time_column_dates, fill_na_holiday_columns
+
+
+time_column='datetime'
+feature_columns = ['station_id', 'month', 'day', 'hour',
+       'lag_4h_percentage_docks_available',
+       'lag_3h_percentage_docks_available',
+       'lag_2h_percentage_docks_available',
+       'lag_1h_percentage_docks_available', 'capacity', 'lat', 'lon',
+       'altitude', 'post_code', 'year', 'day_of_week',
+       'lag_1h_is_interpolated', 'lag_2h_is_interpolated',
+       'lag_3h_is_interpolated', 'lag_4h_is_interpolated', 'FCB_Location',
+       'FCB_Score', 'wea_prep', 'wea_sun', 'wea_temp', 'wea_wind_sp',
+       'holiday', 'd_lag_1d_holiday',
+       'd_lead_1d_holiday', 't_lag_1h_FCB_Location', 't_lag_1h_FCB_Score', 't_lag_1h_wea_prep',
+       't_lag_1h_wea_sun', 't_lag_1h_wea_temp', 't_lag_1h_wea_wind_sp',
+       't_lag_2h_FCB_Location', 't_lag_2h_FCB_Score', 't_lag_2h_wea_prep',
+       't_lag_2h_wea_sun', 't_lag_2h_wea_temp', 't_lag_2h_wea_wind_sp',
+       't_lag_3h_FCB_Location', 't_lag_3h_FCB_Score', 't_lag_3h_wea_prep',
+       't_lag_3h_wea_sun', 't_lag_3h_wea_temp', 't_lag_3h_wea_wind_sp',
+       't_lag_4h_FCB_Location', 't_lag_4h_FCB_Score', 't_lag_4h_wea_prep',
+       't_lag_4h_wea_sun', 't_lag_4h_wea_temp', 't_lag_4h_wea_wind_sp',
+       't_lead_1h_FCB_Location', 't_lead_1h_FCB_Score', 't_lead_1h_wea_prep',
+       't_lead_1h_wea_sun', 't_lead_1h_wea_temp', 't_lead_1h_wea_wind_sp',
+       't_lead_2h_FCB_Location', 't_lead_2h_FCB_Score', 't_lead_2h_wea_prep',
+       't_lead_2h_wea_sun', 't_lead_2h_wea_temp', 't_lead_2h_wea_wind_sp',
+       't_lead_3h_FCB_Location', 't_lead_3h_FCB_Score', 't_lead_3h_wea_prep',
+       't_lead_3h_wea_sun', 't_lead_3h_wea_temp', 't_lead_3h_wea_wind_sp',
+       't_lead_4h_FCB_Location', 't_lead_4h_FCB_Score', 't_lead_4h_wea_prep',
+       't_lead_4h_wea_sun', 't_lead_4h_wea_temp', 't_lead_4h_wea_wind_sp']
+target_column = 'percentage_docks_available'
+
+#### Combine all columns into one list
+selected_columns = feature_columns + [time_column] + [target_column]
+
+
+# Load only the specified columns
+df = pd.read_csv('/content/drive/MyDrive/Data/model_3/Train_prepared_v2.csv') #.sample(frac=frac_load, random_state=42)
+
+df.info()
+
+
+#### Convert last_reported to datetime
+df[time_column] = pd.to_datetime(df[time_column])
+
+
+convert_object_columns_to_boolean(df)
+
+
+convert_object_columns_to_category(df)
+
+
+df.info()
+
+df['percentage_docks_available']
+
+## Model
+day_of_week(df)
+
+#### Define train, validation, and test splits based on time
+#### Using 70% for training, 15% for validation, and 15% for testing
+train_end = df[time_column].quantile(0.7)
+
+train_data = df[df[time_column] <= train_end]
+val_data = df[df[time_column] > train_end]
+
+import gc
+
+del df  # Delete the DataFrame
+gc.collect()  # Force garbage collection
+
+#### Split features and target
+X_train = train_data[feature_columns]
+y_train = train_data[target_column]
+X_val = val_data[feature_columns]
+y_val = val_data[target_column]
+
+!pip  install optuna
+
+####  Imports for modeling
+import numpy as np
+import pandas as pd
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+import lightgbm as lgb
+from lightgbm import LGBMRegressor
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import randint, uniform
+import optuna
+
+#### Create LightGBM datasets
+train_data = lgb.Dataset(X_train, label=y_train, free_raw_data=True)
+val_data = lgb.Dataset(X_val, label=y_val, reference=train_data, free_raw_data=True)
+
+import lightgbm as lgb
+import optuna
+from sklearn.metrics import mean_squared_error
+
+from sklearn.metrics import mean_squared_error
+import numpy as np
+#### Define the objective function for Optuna to optimize
+def objective(trial):
+    # Define the hyperparameter search space using Optuna
+    params = {
+        'objective': 'regression',  # Task type (regression)
+        'metric': 'rmse',  # Evaluation metric (Root Mean Squared Error)
+        'verbosity': -1,  # Suppress LightGBM logs
+        'boosting_type': 'gbdt',  # Gradient Boosting Decision Trees
+        'feature_pre_filter': False,  # No pre-filtering of features
+        'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.5),  # Learning rate (between 0.01 and 0.3)
+        'num_leaves': trial.suggest_int('num_leaves', 20, 1000),  # Maximum number of leaves per tree
+        'max_depth': trial.suggest_int('max_depth', 3, 100),  # Maximum tree depth
+        'min_data_in_leaf': trial.suggest_int('min_data_in_leaf', 10, 200),  # Minimum number of data in a leaf
+        'feature_fraction': trial.suggest_float('feature_fraction', 0.8, 1.0),  # Fraction of features to use
+        'bagging_fraction': trial.suggest_float('bagging_fraction', 0.8, 1.0),  # Fraction of data to use for bagging
+        'bagging_freq': trial.suggest_int('bagging_freq', 1, 7),  # Frequency of bagging
+    }
+
+   #### Train the model with the given hyperparameters
+    model = lgb.train(
+        params,
+        train_data,  # Training dataset
+        valid_sets=[val_data],  # Validation dataset
+        num_boost_round=1000,  # Maximum training rounds
+        callbacks=[
+            lgb.early_stopping(stopping_rounds=100),  # Stop early if no improvement
+            lgb.log_evaluation(0)  # Log evaluation results
+        ]
+    )
+
+    # Make predictions on the validation set
+    preds = model.predict(X_val)
+
+    # Calculate RMSE (Root Mean Squared Error)
+    rmse = np.sqrt(mean_squared_error(y_val, preds))
+    return rmse  # Return RMSE as the metric to minimize
+
+# ========================
+#### 2. Run Hyperparameter Tuning
+# ========================
+
+#### Create an Optuna study to minimize the RMSE
+study = optuna.create_study(direction='minimize')
+
+#### Run optimization for 10 trials
+study.optimize(objective, n_trials=100)
+
+#### Retrieve the best hyperparameters from the study
+best_params = study.best_trial.params
+print("Best Hyperparameters:", best_params)
+
+#### ========================
+#### 3. Train Final Model with Best Hyperparameters
+#### ========================
+
+#### Use the best parameters found during tuning
+final_params = {
+    'objective': 'regression',
+    'metric': 'rmse',
+    'verbosity': -1,
+    'boosting_type': 'gbdt',
+    **best_params  # Merge best hyperparameters into final parameters
+}
+
+
+#### Train the final model with the best hyperparameters
+model = lgb.train(
+    final_params,
+    train_data,
+    valid_sets=[val_data],
+    num_boost_round=5000,  # Maximum training rounds
+    callbacks=[
+        lgb.early_stopping(stopping_rounds=100),  # Early stopping
+        lgb.log_evaluation(50)  # Log evaluation results every 50 iterations
+    ]
+)
+
+#### Save the trained model to a file
+model.save_model('lightgbm_free_docks_model.txt')
+
+
+
+#### Feature importance
+feature_importance = pd.DataFrame({
+    'feature': feature_columns,
+    'importance': model.feature_importance(importance_type='gain')
+})
+print("\nFeature Importance:")
+print(feature_importance.sort_values('importance', ascending=False))
+
+#### feature_importance.sort_values('importance', ascending=False)
+
+#### Train final model on combined train and validation data using best iteration
+final_model = lgb.train(
+    final_params,
+    lgb.Dataset(pd.concat([X_train, X_val]), label=pd.concat([y_train, y_val])),
+    num_boost_round=3052 #model.best_iteration  # Use best iteration from previous validation
+)
+
+#### Save the final model trained on combined data
+final_model.save_model('lightgbm_free_docks_model_final.txt')
+
+sample= pd.read_csv('data\Metadata_prepared_v2.csv')
+
+convert_object_columns_to_boolean(sample)
+convert_object_columns_to_category(sample)
+
+#### Reorder the columns of prediction_data to match X_train's column order
+prediction_data = sample[X_train.columns]
+
+
+#### Check if the columns of prediction_data match the columns of X_train
+columns_match = prediction_data.columns.tolist() == X_train.columns.tolist()
+
+#### Print if the columns match
+print("Columns match:", columns_match)
+
+#### If the columns don't match, print the differences
+if not columns_match:
+    print("Columns in prediction_data that are not in X_train:", set(prediction_data.columns) - set(X_train.columns))
+    print("Columns in X_train that are not in prediction_data:", set(X_train.columns) - set(prediction_data.columns))
+
+
+    # Make predictions
+predictions = final_model.predict(prediction_data)
+
+#### Print or further process predictions
+print("Predictions:", predictions)
+
+#### Create final submission dataframe with explicit index
+final_submission = pd.DataFrame({
+    'index': range(len(predictions)),
+    'percentage_docks_available': predictions
+})
+
+#### Create the directory if it doesn't exist
+import os
+os.makedirs('model_3', exist_ok=True)
+
+#### Get existing files matching pattern
+import glob
+import re
+
+existing_files = glob.glob('model_3/Sub_model_3_plain_*.csv')
+
+#### Extract existing numbers and find max
+numbers = [int(re.search(r'plain_(\d+)', f).group(1)) for f in existing_files if re.search(r'plain_(\d+)', f)]
+next_num = max(numbers) + 1 if numbers else 1
+
+#### Create final submission dataframe with explicit index and convert to numpy array first
+submission_data = np.column_stack((np.arange(len(predictions)), predictions))
+final_submission = pd.DataFrame(
+    submission_data,
+    columns=['index', 'percentage_docks_available']
+).astype({'index': int, 'percentage_docks_available': float})
+
+#### Save to CSV
+output_file = f'model_3/Sub_model_3_plain_{next_num}.csv'
+print(f"\nSaving final submission to: {output_file}")
+
+#### Use numpy savetxt instead of pandas to_csv
+np.savetxt(
+    output_file,
+    submission_data,
+    delimiter=',',
+    header='index,percentage_docks_available',
+    comments='',
+    fmt=['%d', '%.6f']
+)
+
+print(type(final_submission))  # Confirm it's a DataFrame
+print(final_submission.dtypes)  # Check column data types
+print(final_submission.columns)  # See column names
+print(final_submission.index)  # Check index structure
+print(final_submission.head())  # Preview data
 
