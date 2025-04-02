@@ -4,7 +4,9 @@
 
 Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
 Escojimos 3 variables que respresentavan la mayoria de casuisticas significativas. Son la siguientes:
+
 Variables climáticas
+
 Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval:
 Temperatura
 Precipitación máxima en 1 minuto
