@@ -83,27 +83,16 @@ En el siguente grafic se puede observar como en la zona del camp nou se prodce u
 
 Por otro lado, no se obseerva esta dinamica si no hay partido. En un dia de enero de 2020.
 
-![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) real gener 2020 sens ebara
-
-Por otro lado, también se puede observar que en la zona de Plaça Espanya, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, así como la proximidad al estadio del FCB, el modelo funciona favorablemente.
-
-En el momento en que se está disputando un partido en casa, se registra una disminución en la disponibilidad de bicicletas antes y durante el partido. Sin embargo, después del encuentro, la disponibilidad vuelve a aumentar.
-
-Esta dinámica es bastante habitual debido a las diversas dificultades ocasionadas por la gran afluencia de aficionados que utilizan los servicios públicos para llegar al estadio.
-
-![Image](https://github.com/user-attachments/assets/d6002146-b23c-49b8-a8ac-e02e4ea0edcc)
+![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) 
 
 
-La predicción en todas las estaciones de Barcelona varía, aumentando la disponibilidad de bicicletas durante el partido y reduciéndose en las horas previas al encuentro.
+El sigente mapa corresponde a la disponiblidad de dock predichos poer el modelo en un dia con partido en enero de 2020 a els 20horas, se puede observar como el modelo predice que una disminuacion de docks disponibles en la zona del camp nou. 
+![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) 
 
 
+Por otro lado, también se puede observar que en la zona de Plaça Espanya se reduce la disponibilidad de docks en el momento de un partido de marzo de 2024 a las 20h, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, que conectan con el estadio Lluis Companys, estadio actual del FC. Barcelona mientras el Camp Nou esta en obras.
 
-
-
-
-![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) prediccio fggener 2020
-
-![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) predicció març 2024 20h
+![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) 
 
 
 Tenemos version local y version en colab con ftflow explicar las diferencias.
