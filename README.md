@@ -8,14 +8,14 @@ Escojimos 3 variables que respresentavan la mayoria de casuisticas significativa
 Variables climáticas
 Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval:
 
-"Temperatura"
-"Precipitación máxima en 1 minuto"
-"Dirección de la racha máxima del viento a 10 m"
-"Velocidad del viento a 10 m (esc.)"
-"Irradiancia solar global"
-"Racha máxima del viento a 10 m"
-"Precipitación"
-"Humedad relativa"
+"Temperatura":
+"Precipitación máxima en 1 minuto":
+"Dirección de la racha máxima del viento a 10 m":
+"Velocidad del viento a 10 m (esc.)":
+"Irradiancia solar global":
+"Racha máxima del viento a 10 m":
+"Precipitación":
+"Humedad relativa":
 
 Eventos
 Partidos del F.C. Barcelona: Utilizamos los datos de la web Livefutbol.com.
