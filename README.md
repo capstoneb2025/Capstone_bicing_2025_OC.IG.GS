@@ -1,21 +1,19 @@
 # CAPSTONE_BICING_2025
 
-Introduccció:
+## Introduccció:
 
 Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
 Escojimos 3 variables que respresentavan la mayoria de casuisticas significativas. Son la siguientes:
-
 Variables climáticas
 Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval:
-
-   "Temperatura":
-   "Precipitación máxima en 1 minuto":
-   "Dirección de la racha máxima del viento a 10 m":
-   "Velocidad del viento a 10 m (esc.)":
-   "Irradiancia solar global":
-   "Racha máxima del viento a 10 m":
-   "Precipitación":
-   "Humedad relativa":
+Temperatura
+Precipitación máxima en 1 minuto
+Dirección de la racha máxima del viento a 10 m
+Velocidad del viento a 10 m (esc.)
+Irradiancia solar global
+Racha máxima del viento a 10 m
+Precipitación
+Humedad relativa
 
 Eventos
 Partidos del F.C. Barcelona: Utilizamos los datos de la web Livefutbol.com.
@@ -25,6 +23,9 @@ Festividades: Recurriendo a la web de Betevé del Ajuntament de Barcelona.
 Para verificar la relevancia de estas variables, analizamos su impacto en la predicción mediante la creación de gráficos y mapas, ajustando las fechas y comparando los resultados con los datos reales. También identificamos fechas clave para evaluar si permitían predecir escenarios específicos, lo que ayudó a validar el modelo.
 
 Finalmente, consideramos que sería una buena idea aplicar el modelo en una aplicación, permitiendo sintetizar el trabajo en un sistema tangible.
+
+
+
 
 Poner graficos barcelona estan incluidos los partidos locales i fuera de casa se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
 
@@ -79,7 +80,7 @@ Conclusion:
 
 
 
-
+# Explicacion de coodigo:
 
 ### Este código importa las librerías necesarias para trabajar con datos y entrenar un modelo de Machine Learning.
 ### Importamos numpy para cálculos numéricos y manejo de arrays. LightGBM, una librería eficiente para modelos de Gradient Boosting. Métricas para evaluar el rendimiento del modelo y LabelEncoder para convertir datos categóricos en números.
