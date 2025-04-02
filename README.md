@@ -3,19 +3,27 @@
 Introduccció:
 
 Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
+Escojimos 3 variables que respresentavan la mayoria de casuisticas significativas. Son la siguientes:
 
+Variables climàtiques 
+    "Temperatura": 						
+    "Precipitació màxima en 1 minut": 			
+    "Direcció de la ratxa màxima del vent a 10 m":
+    "Velocitat del vent a 10 m (esc.)": 		
+    "Irradiància solar global": 			
+    "Ratxa màxima del vent a 10 m": 			
+    "Precipitació": 					
+    "Humitat relativa": 
 
+Esdeveniments (partits F.C. Barcelona)
+Festividades
 
-Por que hemo puesto las x variables
-Usuaris de bicing
-problemes de les hores haviem posat +2
+Al introducirlas comprovamos que mejoravan la predicion y ademas al buscar fechas clave servian para predecir
+
 
 Introducció de les dades (per que hem afegit que)
 
 Poner graficos barcelona estan incluidos los partidos locales i fuera de casa se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
-Sol/lluvia 
-Dias festivos
-
 
 Aplicacion app ponder capturas de como funciona. predicciones con pardido del barça o sin partido 
 
