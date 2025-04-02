@@ -55,7 +55,7 @@ En los dos graficos siguentes se observa como funciona la predicion cuando no ha
 ![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) 
 
 
-En el siguiente grafico se puede observar el efecto que tiene el sol por horas del dia, cuando más pasan la shoras mas se usa el servicio hasta el medio dia y aparti de e emoment el uso ser reduce hasta que s epon el sol
+En el siguiente grafico se puede observar las horas de so en julio , cuando más pasan la shoras mas se usa el servicio hasta el medio dia y aparti de e emoment el uso ser reduce hasta que s epon el sol
 
 ![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567)
 
