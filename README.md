@@ -55,11 +55,11 @@ En los dos graficos siguentes se observa como funciona la predicion cuando no ha
 ![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) 
 
 
-En el siguiente grafico se puede observar las horas de so en julio , cuando más pasan la shoras mas se usa el servicio hasta el medio dia y aparti de e emoment el uso ser reduce hasta que s epon el sol
+En el siguiente grafico se puede observar como funciona la variable sol en un dia julio, augmenta la radiacion hasta el el medio dia y aparti de hasta que se pone el sol.
 
 ![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567)
 
-En el siguetne grafico
+En el siguiente grafico se puede observar como augmenta el % de dock disponibles de un dia de julio sin sol 
 
 ![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) real juliol sense sol 
 
