@@ -45,6 +45,30 @@ Variable partidos FCB: se ha incluido una variable que recoge todos los partidos
 
 En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. En cambio, si no hay la variable lluvia, la predicción también funciona correctamente però no tanto.
 
+
+![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) efecto sin lluvia
+![Image](https://github.com/user-attachments/assets/7ee606d8-67a6-4ce6-905f-3ae417df3d28) real partits gener 2020
+
+![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) real juliol sense sol 
+
+![Image](https://github.com/user-attachments/assets/11284f97-ea93-4b39-9f4f-98f3fa9e4de8) real 2020 juliol amb sol
+
+![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567) efecte sol
+
+![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) prediccio fggener 2020
+
+![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) predicció març 2024 20h
+
+![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) real gener 2020 sens ebara
+
+![Image](https://github.com/user-attachments/assets/608de8d6-ad04-4580-a862-b87aa8f2e955) diferencia sol sense
+
+
+![Image](https://github.com/user-attachments/assets/565609d4-e185-422f-976e-22128347d6ec) efecto lluvia
+
+
+
+
 ![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
 
 
