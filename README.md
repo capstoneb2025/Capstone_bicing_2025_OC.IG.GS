@@ -5,24 +5,26 @@ Introduccció:
 Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
 Escojimos 3 variables que respresentavan la mayoria de casuisticas significativas. Son la siguientes:
 
-Variables climàtique: Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval.
+Variables climáticas
+Para ello, consideramos datos meteorológicos provenientes de la Xarxa d'Estacions Meteorològiques Automàtiques (XEMA) de la estación del Raval:
 
-    "Temperatura": 						
-    "Precipitació màxima en 1 minut": 			
-    "Direcció de la ratxa màxima del vent a 10 m":
-    "Velocitat del vent a 10 m (esc.)": 		
-    "Irradiància solar global": 			
-    "Ratxa màxima del vent a 10 m": 			
-    "Precipitació": 					
-    "Humitat relativa": 
+"Temperatura"
+"Precipitación máxima en 1 minuto"
+"Dirección de la racha máxima del viento a 10 m"
+"Velocidad del viento a 10 m (esc.)"
+"Irradiancia solar global"
+"Racha máxima del viento a 10 m"
+"Precipitación"
+"Humedad relativa"
 
-Esdeveniments (partits F.C. Barcelona) que utilizamos los datos de la web "Livefutbol.com".
+Eventos
+Partidos del F.C. Barcelona: Utilizamos los datos de la web Livefutbol.com.
 
-Festividades: que utilizamos la web Betevé de l'Ajuntament de Barcelona.
+Festividades: Recurriendo a la web de Betevé del Ajuntament de Barcelona.
 
-Para varificar si estas variables eran significativas comprovamos que mejoravan la predicion crendo diferentes graficos mapas canviado las fechas comparando la precicion y los datos reales. Ademas al buscar fechas clave testeamos si servian para predecir escenarios concretos que servirian para validar el modelo.
+Para verificar la relevancia de estas variables, analizamos su impacto en la predicción mediante la creación de gráficos y mapas, ajustando las fechas y comparando los resultados con los datos reales. También identificamos fechas clave para evaluar si permitían predecir escenarios específicos, lo que ayudó a validar el modelo.
 
-Finalmente pensamos que seria que seria una buena idea aplicar el modelo en una aplicacion i de esa forma sintetizar el trabajo en un sistema tangible.
+Finalmente, consideramos que sería una buena idea aplicar el modelo en una aplicación, permitiendo sintetizar el trabajo en un sistema tangible.
 
 Poner graficos barcelona estan incluidos los partidos locales i fuera de casa se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
 
