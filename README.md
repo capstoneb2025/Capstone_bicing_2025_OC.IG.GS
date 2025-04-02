@@ -83,10 +83,6 @@ En el siguiente gráfico se puede observar la diferencia en el porcentaje de doc
 
 
 
-![Image](https://github.com/user-attachments/assets/0dc15f32-5263-467f-9dcb-e14aca3770ae)
-
-
-También se puede observar cómo, en el momento en que se produce la lluvia, el modelo predice correctamente que hay más spots de Bicing y mayor disponibilidad de bicicletas.
 
 ![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
