@@ -96,7 +96,7 @@ Por otro lado, también se observa una reducción predicha por el modelo en la d
 
 
 
-# Explicacion de coodigo:
+# Explicacion de codigo:
 
 # Modelo 2:
 
@@ -241,11 +241,6 @@ convert_object_columns_to_boolean(sample)
 
 convert_object_columns_to_category(df)
 convert_object_columns_to_category(sample)
-
-# Model
-#### Filtramos `df` para mantener solo las filas donde el año sea mayor a 2022.  
-
-#### df = df[df['year']>2022]
 
 #### Definimos el punto final para el conjunto de entrenamiento (70% de los datos).  Definimos el punto final para el conjunto de validación (85% de los datos). Y dividimos el DataFrame en tres conjuntos: entrenamiento, validación y prueba.
 
