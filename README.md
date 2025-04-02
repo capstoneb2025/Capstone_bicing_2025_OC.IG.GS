@@ -44,32 +44,32 @@ Variable lluvia: se ha incluido en el dataset una variable que registra las prec
 
 Variable partidos FCB: se ha incluido una variable que recoge todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
-En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. 
+En los siguientes gráficos se puede observar cómo el uso de variables climáticas, como la lluvia (cuando se registran precipitaciones) y la radiación solar, tiene un impacto positivo en la predicción del modelo.
 
-En los siguientes dos gráficos se puede observar, en dos fechas diferentes, cómo el porcentaje de docks disponibles disminuye en el momento en que hay precipitaciones. Cuando comienza a llover, se evidencia cómo los usuarios depositan sus bicicletas en las estaciones.
+Asimismo, en los dos gráficos siguientes, correspondientes a fechas diferentes, se aprecia cómo el porcentaje de docks disponibles disminuye en el momento en que hay precipitaciones. Cuando comienza a llover, se evidencia que los usuarios depositan sus bicicletas en las estaciones.
 
 ![Image](https://github.com/user-attachments/assets/565609d4-e185-422f-976e-22128347d6ec) 
 
-En los dos graficos siguentes se observa como funciona la predicion cuando no hay lluvia, este grafico tiene una tendencia muy similar al efecto de un dia con sol que se puede observer a continuacion.
+En los dos gráficos siguientes se observa cómo funciona la predicción cuando no hay lluvia. Este comportamiento muestra una tendencia muy similar al efecto de un día soleado, como se puede ver a continuación.
 
 ![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) 
 
 
-En el siguiente grafico se puede observar como funciona la variable sol en un dia julio, augmenta la radiacion hasta el el medio dia y aparti de hasta que se pone el sol. 
+En el siguiente gráfico se puede observar cómo funciona la variable "sol" en un día de julio. La radiación aumenta hasta el mediodía y luego comienza a descender hasta la puesta de sol.
 
 ![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567)
 
-En el siguiente grafico se puede observar como augmenta el % de dock disponibles de un dia de julio de 2020 sin sol. Se observa una disponibilidad mas reducuida en la costa.
+En el siguiente gráfico se puede observar cómo aumenta el porcentaje de docks disponibles en un día de julio de 2020 sin sol. Se aprecia una menor disponibilidad en la zona costera.
 
-![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) real juliol sense sol 
+![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) 
 
-En el siguiente grafico se puede observar dia de julio 2020 con sol y como augmenta mucho mayor el % de dock disponibles principalmente la zona de costa.
+En el siguiente gráfico se puede observar un día de julio de 2020 con sol y cómo el porcentaje de docks disponibles aumenta significativamente, especialmente en la zona costera.
 
 ![Image](https://github.com/user-attachments/assets/11284f97-ea93-4b39-9f4f-98f3fa9e4de8) 
 
-En el siguente grafico se puede observar la diferencia de % de docks disponibles en dias de sol i sin sol en un dia de julio lo que se evidencia el fucnionamiento. 
+En el siguiente gráfico se puede observar la diferencia en el porcentaje de docks disponibles entre días soleados y días sin sol en un día de julio, evidenciando así su impacto.
 
-![Image](https://github.com/user-attachments/assets/608de8d6-ad04-4580-a862-b87aa8f2e955) diferencia sol sense
+![Image](https://github.com/user-attachments/assets/608de8d6-ad04-4580-a862-b87aa8f2e955) 
 
 
 
