@@ -2,7 +2,9 @@
 
 Introduccció:
 
-Explicacion de historia.
+Como usuarios de Bicing y residentes de Barcelona, debatimos sobre qué variables incluir en el modelo para mejorarlo e incorporar la mayoría de los casos y situaciones que pueden favorecer o dificultar el uso del servicio de Bicing en la ciudad.
+
+
 
 Por que hemo puesto las x variables
 Usuaris de bicing
