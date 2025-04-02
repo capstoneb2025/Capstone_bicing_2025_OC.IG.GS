@@ -55,15 +55,19 @@ En los dos graficos siguentes se observa como funciona la predicion cuando no ha
 ![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) 
 
 
-En el siguiente grafico se puede observar como funciona la variable sol en un dia julio, augmenta la radiacion hasta el el medio dia y aparti de hasta que se pone el sol.
+En el siguiente grafico se puede observar como funciona la variable sol en un dia julio, augmenta la radiacion hasta el el medio dia y aparti de hasta que se pone el sol. 
 
 ![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567)
 
-En el siguiente grafico se puede observar como augmenta el % de dock disponibles de un dia de julio sin sol 
+En el siguiente grafico se puede observar como augmenta el % de dock disponibles de un dia de julio de 2020 sin sol. Se observa una disponibilidad mas reducuida en la costa.
 
 ![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) real juliol sense sol 
 
-![Image](https://github.com/user-attachments/assets/11284f97-ea93-4b39-9f4f-98f3fa9e4de8) real 2020 juliol amb sol
+En el siguiente grafico se puede observar dia de julio 2020 con sol y como augmenta mucho mayor el % de dock disponibles principalmente la zona de costa.
+
+![Image](https://github.com/user-attachments/assets/11284f97-ea93-4b39-9f4f-98f3fa9e4de8) 
+
+En el siguente grafico se puede observar la diferencia de % de docks disponibles en dias de sol i sin sol en un dia de julio lo que se evidencia el fucnionamiento. 
 
 ![Image](https://github.com/user-attachments/assets/608de8d6-ad04-4580-a862-b87aa8f2e955) diferencia sol sense
 
