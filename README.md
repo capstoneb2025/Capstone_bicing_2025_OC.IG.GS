@@ -86,6 +86,11 @@ Por otro lado, esta dinámica no se observa en días sin partido. Por ejemplo, e
 ![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) 
 
 
+
+### Funcionamiento del modelo:
+
+A continuacion vamos a mostra dos mapas de calor con la que creemos que se puede validar el la prediciones del modelo.
+
 El siguiente mapa muestra la disponibilidad de docks predicha por el modelo en un día con partido en enero de 2020 a las 20:00 horas. Se puede observar cómo el modelo predice una disminución en la disponibilidad de docks en la zona del Camp Nou.
 ![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) 
 
@@ -94,8 +99,8 @@ Por otro lado, también se observa una reducción predicha por el modelo en la d
 
 ![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) 
 
-
-
+En conclusión, basándonos en nuestro "sentido común", entendemos que estas predicciones tienen la capacidad de anticipar los comportamientos habituales de los usuarios del Bicing.
+ 
 # Explicacion de codigo:
 
 # Modelo 3 (definitivo):
