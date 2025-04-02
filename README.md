@@ -95,16 +95,10 @@ Por otro lado, también se puede observar que en la zona de Plaça Espanya se re
 ![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) 
 
 
-Tenemos version local y version en colab con ftflow explicar las diferencias.
-
-Aplicacion Orlando
-
-Conclusion:
-
-
-
 
 # Explicacion de coodigo:
+
+# Modelo 2:
 
 ### Este código importa las librerías necesarias para trabajar con datos y entrenar un modelo de Machine Learning.
 ### Importamos numpy para cálculos numéricos y manejo de arrays. LightGBM, una librería eficiente para modelos de Gradient Boosting. Métricas para evaluar el rendimiento del modelo y LabelEncoder para convertir datos categóricos en números.
@@ -393,4 +387,6 @@ final_submission.to_csv(output_file, index=False)
 
 
 # Modelo 3:
+
+
 
