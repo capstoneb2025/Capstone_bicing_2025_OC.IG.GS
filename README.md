@@ -73,24 +73,24 @@ En el siguiente gráfico se puede observar la diferencia en el porcentaje de doc
 
 
 
-Variable esdevenimentos partidos del FC Barcelona:
+Variable "Eventos: Partidos del FC Barcelona"
 
-Al incluir la variable si hay partido en casa se puede observar como disminuye el % de docks disponibles al rededor del estadio donde se juega el partido.
+Al incluir la variable "partido en casa", se observa cómo disminuye el porcentaje de docks disponibles alrededor del estadio donde se juega el partido.
 
-En el siguente grafic se puede observar como en la zona del camp nou se prodce una disminucion del % de docks disponibles en el 2020 a l ahora del partido 20:00.
+En el siguiente gráfico se puede ver cómo, en la zona del Camp Nou, se produce una disminución en el porcentaje de docks disponibles en enero del 2020 a la hora del partido (20:00).
 
 ![Image](https://github.com/user-attachments/assets/7ee606d8-67a6-4ce6-905f-3ae417df3d28) 
 
-Por otro lado, no se obseerva esta dinamica si no hay partido. En un dia de enero de 2020.
+Por otro lado, esta dinámica no se observa en días sin partido. Por ejemplo, en un día de enero de 2020, no se registra una disminución significativa en el porcentaje de docks disponibles alrededor del estadio.
 
 ![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) 
 
 
-El sigente mapa corresponde a la disponiblidad de dock predichos poer el modelo en un dia con partido en enero de 2020 a els 20horas, se puede observar como el modelo predice que una disminuacion de docks disponibles en la zona del camp nou. 
+El siguiente mapa muestra la disponibilidad de docks predicha por el modelo en un día con partido en enero de 2020 a las 20:00 horas. Se puede observar cómo el modelo predice una disminución en la disponibilidad de docks en la zona del Camp Nou.
 ![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) 
 
 
-Por otro lado, también se puede observar que en la zona de Plaça Espanya se reduce la disponibilidad de docks en el momento de un partido de marzo de 2024 a las 20h, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, que conectan con el estadio Lluis Companys, estadio actual del FC. Barcelona mientras el Camp Nou esta en obras.
+Por otro lado, también se observa una reducción predicha por el modelo en la disponibilidad de docks en la zona de Plaça Espanya durante un partido en marzo de 2024 a las 20:00 horas. Actualmente, esta área concentra conexiones de bus, metro y tren con el servicio de Bicing, facilitando el acceso al Estadio Lluís Companys, donde el FC Barcelona juega mientras el Camp Nou se encuentra en obras.
 
 ![Image](https://github.com/user-attachments/assets/1e8afcd0-bec7-452b-8205-4cb974ddadfd) 
 
