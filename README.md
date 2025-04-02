@@ -26,16 +26,6 @@ Para relizar el trabajo anterior de forma mas fluida usamos mtflow para comparar
 
 Finalmente, consideramos que sería una buena idea aplicar el modelo en una aplicación, permitiendo sintetizar el trabajo en un sistema tangible.
 
-
-
-
-Poner graficos barcelona estan incluidos los partidos locales i fuera de casa se nota que el cam nou esta de obras. i estan haciento los partidos en monjuic.
-
-Aplicacion app ponder capturas de como funciona. predicciones con pardido del barça o sin partido 
-
-Explicacion de coodigo:
-
-
 ## Explicación de las varibles extra incluidas en el modelo:
 
 Se han incluido en el dataset las siguientes variables:
