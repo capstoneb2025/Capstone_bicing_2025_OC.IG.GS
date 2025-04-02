@@ -50,9 +50,17 @@ En los siguientes dos gráficos se puede observar, en dos fechas diferentes, có
 
 ![Image](https://github.com/user-attachments/assets/565609d4-e185-422f-976e-22128347d6ec) 
 
+En los dos graficos siguentes se observa como funciona la predicion cuando no hay lluvia, este grafico tiene una tendencia muy similar al efecto de un dia con sol que se puede observer a continuacion.
 
-![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) efecto sin lluvia
-![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567) efecte sol
+![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) 
+
+
+En el siguiente grafico se puede observar el efecto que tiene el sol por horas del dia, cuando más pasan la shoras mas se usa el servicio hasta el medio dia y aparti de e emoment el uso ser reduce hasta que s epon el sol
+
+![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567)
+
+En el siguetne grafico
+
 ![Image](https://github.com/user-attachments/assets/7d679508-db92-4a16-8dcb-66340f57f9e2) real juliol sense sol 
 
 ![Image](https://github.com/user-attachments/assets/11284f97-ea93-4b39-9f4f-98f3fa9e4de8) real 2020 juliol amb sol
