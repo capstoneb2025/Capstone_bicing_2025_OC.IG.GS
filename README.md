@@ -73,18 +73,9 @@ En el siguiente gráfico se puede observar la diferencia en el porcentaje de doc
 
 
 
+Variable esdevenimentos partidos del FC Barcelona:
 
 
-
-
-
-
-
-
-
-
-
-![Image](https://github.com/user-attachments/assets/5ea1a140-7709-41cd-b587-e229a28d7926)
 
 
 Por otro lado, también se puede observar que en la zona de Plaça Espanya, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, así como la proximidad al estadio del FCB, el modelo funciona favorablemente.
@@ -99,6 +90,7 @@ Esta dinámica es bastante habitual debido a las diversas dificultades ocasionad
 La predicción en todas las estaciones de Barcelona varía, aumentando la disponibilidad de bicicletas durante el partido y reduciéndose en las horas previas al encuentro.
 
 ![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
+
 
 
 
