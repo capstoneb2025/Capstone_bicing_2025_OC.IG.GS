@@ -45,7 +45,7 @@ Variable lluvia: se ha incluido en el dataset una variable que registra las prec
 Variable partidos FCB: se ha incluido una variable que recoge todos los partidos del FC Barcelona, tanto en Barcelona como fuera.
 
 En los siguientes gráficos, se puede observar cómo el uso de la variable lluvia (“si se registran precipitaciones”) tiene efectos positivos en la predicción del modelo. En cambio, si no hay la variable lluvia, la predicción también funciona correctamente però no tanto.
-En los siguentes 2 graficos se pueden observar en dos fechas diferentes como en el momento en el que hay precipitaciones se reduce el percetage de dots disponobles
+En los siguentes 2 graficos se pueden observar en dos fechas diferentes como en el momento en el que hay precipitaciones se reduce el percetage de docks disponobles. En el momento en que se pone a llover se observa como los usuarios dispositan la bicicleta en la estacion.
 ![Image](https://github.com/user-attachments/assets/565609d4-e185-422f-976e-22128347d6ec) 
 ![Image](https://github.com/user-attachments/assets/7692986e-08d9-4a03-b33f-1ab86c11f8b8) efecto sin lluvia
 ![Image](https://github.com/user-attachments/assets/5e0ab0f3-19c3-450f-aa4a-64b73a3ff567) efecte sol
