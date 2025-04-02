@@ -75,8 +75,15 @@ En el siguiente gráfico se puede observar la diferencia en el porcentaje de doc
 
 Variable esdevenimentos partidos del FC Barcelona:
 
+Al incluir la variable si hay partido en casa se puede observar como disminuye el % de docks disponibles al rededor del estadio donde se juega el partido.
 
+En el siguente grafic se puede observar como en la zona del camp nou se prodce una disminucion del % de docks disponibles en el 2020 a l ahora del partido 20:00.
 
+![Image](https://github.com/user-attachments/assets/7ee606d8-67a6-4ce6-905f-3ae417df3d28) 
+
+Por otro lado, no se obseerva esta dinamica si no hay partido. En un dia de enero de 2020.
+
+![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) real gener 2020 sens ebara
 
 Por otro lado, también se puede observar que en la zona de Plaça Espanya, donde actualmente se encuentran las conexiones de bus, metro y tren con el Bicing, así como la proximidad al estadio del FCB, el modelo funciona favorablemente.
 
@@ -89,16 +96,10 @@ Esta dinámica es bastante habitual debido a las diversas dificultades ocasionad
 
 La predicción en todas las estaciones de Barcelona varía, aumentando la disponibilidad de bicicletas durante el partido y reduciéndose en las horas previas al encuentro.
 
-![Image](https://github.com/user-attachments/assets/a5bcf9ae-24f3-4340-b3db-9a5d9097c492)
 
 
 
 
-![Image](https://github.com/user-attachments/assets/e9aed01a-b223-40a5-8a1f-694e03238404)
-
-![Image](https://github.com/user-attachments/assets/7ee606d8-67a6-4ce6-905f-3ae417df3d28) real partits gener 2020
-
-![Image](https://github.com/user-attachments/assets/73123f8a-04dc-42d4-be1b-caa58bfad1e8) real gener 2020 sens ebara
 
 ![Image](https://github.com/user-attachments/assets/f02225bd-8004-454e-9c40-c62ad77a653a) prediccio fggener 2020
 
