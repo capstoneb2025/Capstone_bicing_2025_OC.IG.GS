@@ -86,3 +86,4 @@ El modelo captura estos comportamiento de los usuarios y tiene la capacidad de a
 
 Hemos procesado por separado los datos crudos y los datos de test para unirlos solamente en el último archivo para crear la entrega de Kaggle. El diagrama de flujo de datos y procesado sería el siguiente:
 
+![data_flow_diagram](https://github.com/user-attachments/assets/9b2f0b06-5fda-4c72-ba7e-4556d6d7cfae)
