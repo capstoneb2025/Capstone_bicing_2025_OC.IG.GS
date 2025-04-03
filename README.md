@@ -103,6 +103,9 @@ from lightgbm import LGBMRegressor
 from lightgbm import early_stopping
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
+import mlflow
+import mlflow.sklearn
+import mlflow.lightgbm as mlflow_lightgbm
 
 from google.colab import drive
 drive.mount('/content/drive')
@@ -217,6 +220,14 @@ from sklearn.metrics import mean_squared_error
 
 from sklearn.metrics import mean_squared_error
 import numpy as np
+
+#### Config MLflow
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_experiment("Bicing_Docks_Prediction3")
+
+#### Enable automatic logging of metrics and parameters
+mlflow.lightgbm.autolog()
+
 #### Define the objective function for Optuna to optimize
 def objective(trial):
     # Define the hyperparameter search space using Optuna
@@ -234,7 +245,11 @@ def objective(trial):
         'bagging_fraction': trial.suggest_float('bagging_fraction', 0.8, 1.0),  # Fraction of data to use for bagging
         'bagging_freq': trial.suggest_int('bagging_freq', 1, 7),  # Frequency of bagging
     }
-
+ #### Train the model with MLflow
+    with mlflow.start_run():
+ #### Register parameters 
+        mlflow.log_params(params)
+        mlflow.log_metric("accuracy", 0.99)
    #### Train the model with the given hyperparameters
     model = lgb.train(
         params,
@@ -252,6 +267,8 @@ def objective(trial):
 
     # Calculate RMSE (Root Mean Squared Error)
     rmse = np.sqrt(mean_squared_error(y_val, preds))
+    # Save RMSE in mlflow
+    mlflow.log_metric("val_rmse", rmse)
     return rmse  # Return RMSE as the metric to minimize
 
 # ========================
